@@ -1,0 +1,183 @@
+/*
+// ================================================================
+//                    M A S S   E - M A I L E R
+// ================================================================
+//
+// The script sends e-mails to different e-mail addresses specified
+// in different text files. The text files can be changed and saved
+// over a web interface. The user can send the e-mails in HTML- or
+// plain text format. The script also writes a logfile and the user
+// can ad a signature at the end of the e-mails.
+//
+// Copyright (C) 2003, Patrick Biegel / 15.11.2005 / 23:50
+//
+//
+// ================================================================
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License as
+// published by the Free Software Foundation; either version 2 of
+// the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public
+// License along with this program; if not, write to the Free
+// Software Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+// MA 02111-1307 USA
+//
+// ================================================================
+//
+*/
+
+
+body {
+  font-family:arial,serif;
+  color:#000066;
+  background-color:#C5C5C5;
+}
+
+
+h1 {
+  font-size:20pt;
+}
+
+
+a:link {
+  color:#000066;
+  background-color:#F0E68C;
+  text-decoration:none;
+}
+
+
+a:visited {
+  color:#000066;
+  background-color:#F0E68C;
+  text-decoration:none;
+}
+
+
+a:active {
+  color:#CC0033;
+  background-color:#F0E68C;
+  text-decoration:none;
+}
+
+
+.centertable {
+  text-align:center;
+  height:100%;
+  width:100%;
+}
+
+
+.titletable {
+  text-align:center;
+  width:700px;
+}
+
+
+.formtable {
+  text-align:left;
+  height:420px;
+  width:700px;
+}
+
+
+.tableleft {
+  font-size:12pt;
+  font-weight:bold;
+  vertical-align:top;
+  width:260px;
+}
+
+
+.bottomtable {
+  width:700px;
+}
+
+
+.changetable {
+  text-align:center;
+  height:420px;
+  width:600px;
+}
+
+
+.savetable {
+  text-align:center;
+  height:472px;
+  width:600px;
+}
+
+
+.sendtable {
+  text-align:left;
+  height:472px;
+  width:600px;
+}
+
+
+.bottomcell {
+  text-align:center;
+}
+
+
+.linkcell {
+  text-align:center;
+  font-weight:bold;
+  font-size:12pt;
+  background-color:#F0E68C;
+  width:140px;
+}
+
+
+.copyright {
+  text-align:center;
+  font-weight:bold;
+  font-size:10pt;
+  color:#CC0033;
+  background-color:#C5C5C5;
+}
+
+
+.debugtable {
+  text-align:left;
+  width:700px;
+  color:#000066;
+  background-color:#99CCCC;
+}
+
+
+.debugtitle {
+  text-align:center;
+  font-size:12pt;
+  font-weight:bold;
+  width:700px;
+  color:#000066;
+  background-color:#99CCFF;
+}
+
+
+.debugleft {
+  width:200px;
+  font-weight:bold;
+}
+
+
+.debugright {
+  width:500px;
+}
+
+
+.debughint {
+  text-align:center;
+  font-size:10pt;
+  font-weight:bold;
+  width:700px;
+  color:#000066;
+  background-color:#99CCFF;
+}

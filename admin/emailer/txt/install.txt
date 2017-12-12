@@ -1,0 +1,11 @@
+Installation:
+-------------
+
+1. Untar the emailer archive.
+2. Upload the whole directory "emailer" to your web root directory.
+3. Give the permissions 777 to the directories "emailer/lists/" and "emailer/log/".
+4. Give the permissions 666 to all files in the directory "emailer/lists/" and "emailer/log/".
+5. Open the script "config.php" and put your data into the configuration section.
+7. Open the url "<your webserver>/<your web-root-directory>/emailer/php/emailer.php".
+8. Now you can use the script - have fun !
+9. If you have a question write us an e-mail to: support@biegelscripts.com

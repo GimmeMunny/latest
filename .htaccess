@@ -1,0 +1,7 @@
+RewriteEngine On 
+
+RewriteCond %{HTTP_HOST} ^gimmemunny\.com [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.gimmemunny.com/$1 [R,L]
+
+#RewriteOptions inherit

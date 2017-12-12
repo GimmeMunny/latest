@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html> 
+<!--  Noir HTML5 mobile template  www.QRdvark.com  10jun11  -->
+<!-- 'Noir' by Azalea Software, Inc. is licensed under the Creative Commons Attribution 3.0 Unported License (CC BY 3.0) -->
+
+<head>
+<!--  the title tag is extremely important in search engine optimization (SEO)  -->
+<title>DTS Motorsports</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<!-- you can apply different style sheets for mobile vs. computer browsers -->
+<!--  <link href="style-mobile.css" rel="stylesheet" type="text/css" media="handheld" > -->
+<!--  <link href="style-computer.css" rel="stylesheet" type="text/css" media="screen" > -->
+<!--  the favicon & iOS home screen icon are both 57x57 PNG's. Use a full URL file path for Android devices.  -->
+<!--  <link rel="apple-touch-icon-precomposed" href="http://yoursite.com/apple-touch-icon.png"/>  -->
+<!--  <link rel="icon" type="image/vnd.microsoft.icon" href="http://yoursite.com/favicon.png" />  -->
+<!--  always make a site map for your mobile site  www.xml-sitemaps.com  -->
+<!--  <link rel="alternate" type="application/rss+xml" title="ROR" href="ror.xml" /> -->
+<script type="text/javascript"
+    src="http://maps.google.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript">
+  function initialize() {
+    var position = new google.maps.LatLng(33.348600, -111.799883);
+    var myOptions = {
+      zoom: 10,
+      center: position,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(
+        document.getElementById("map_canvas"),
+        myOptions);
+ 
+    var marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        title:"DTS Motorsports."
+    });  
+ 
+    var contentString = 'DTS Motorsports!';
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+ 
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+ 
+  }
+ 
+</script>
+
+
+</head>
+
+<body onload="initialize()">
+<div class="content">
+	<div id="navButtons">
+		<ul>
+        
+			<li><a href="index.html">home</a></li>
+			<li><a href="contact.html">contact</a></li>
+			<li><a href="services.html">services</a></li>
+		</ul>
+	</div>
+
+
+	<p><img src="images/logo.png" class="imgRight" alt="logo" />
+    
+    
+    
+    
+Services Offered:
+
+<div class="green">
+<ul>
+<li>Brakes</li>
+<li>Suspension</li>
+<li>Tires</li>
+<li>Trackside Tips</li>
+<li>Tune-ups</li>
+<li>Engine Rebuilds</li>
+<li>Routine Maintenance</li>
+<li>Trackside Support</li>
+
+</ul></div><br /><br />
+Now an approved distributor for Parts Unlimited.  If we don't have a part in stock, we can have it next day.<br /><br />
+    
+    <br><br>
+    770 N Monterey STE D, Gilbert, AZ.  <a href="http://maps.google.com/?q=770 N Monterey Suite D, Gilbert, AZ" target="_blank">Map It!</a><br><br><br>
+         <a href="tel:4802623752">Click to Call!  (480) 262-3752</a>
+    <br><br>
+    <img src="images/store.png">
+    
+    </p>
+<!--  don't forget to borrow the Facebook, Twitter, RSS, and Creative Commons icons  -->
+<div class="centerMe">
+	<p><a href="http://www.facebook.com/dtsmoto"><img src="Facebook.png" alt="follow us on Facebook" width="24" height="24" /></a> &nbsp; 
+</div><br />
+
+<!-- the footer can be 2 lines with 2 <p>'s  -->
+<div class="footer">
+	<p><i>2013 DTS Motorsports</i> </p>
+</div>
+
+</div>
+</body>
+</html>

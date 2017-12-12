@@ -1,0 +1,16 @@
+If script is not working then proceed here and read:
+http://www.phpmagicbook.com/php-script-not-working-solution/
+
+Globals must be off at your server of localhost. 
+In this case just get variables when these are being posted:
+
+e.g.
+
+$Name=$_REQUEST["Name"];
+$Email=$_REQUEST["Email"];
+$SomeOtherVariable=$_REQUEST["SomeOtherVariable"];
+
+You will have to get every variable like above in the PHP script page at the top of page after when PHP code starts.
+Globals Off is the dafault settings at server and localhost which is recommended. When Globals are off, you have to get variables like above.
+
+http://www.phpmagicbook.com

@@ -1,0 +1,1 @@
+[26-Mar-2015 16:03:38 UTC] PHP Warning:  mysql_connect(): Unknown MySQL server host 'americ500k.db.7934627.hostedresource.com' (2) in /home/gimmemunny/public_html/admin/emailer/php/emailer.php on line 90
